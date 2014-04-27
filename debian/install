@@ -1,0 +1,3 @@
+module/* /usr/share/pyshared/shinken/modules/booster-nrpe
+doc/* /usr/share/doc/shinken-module-booster-nrpe
+etc/* /etc/shinken
