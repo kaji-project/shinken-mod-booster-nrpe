@@ -1,6 +1,7 @@
 shinken-module-booster-nrpe (1.4-1kaji0.1) UNRELEASED; urgency=medium
 
-  * Kaji bkank package
+  * Kaji blank package
+  * Renames module into NrpeBooster
 
  -- Matthieu Caneill <matthieu.caneill@savoirfairelinux.com>  Tue, 22 Jul 2014 18:23:44 -0400
 
