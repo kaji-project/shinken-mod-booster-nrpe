@@ -29,7 +29,7 @@ rm -rf %{buildroot}/*
 install -d %{buildroot}/usr/share/pyshared/shinken/modules/booster-nrpe
 install -pm07555 module/* %{buildroot}/usr/share/pyshared/shinken/modules/booster-nrpe 
 
-install -d %{buildroot}/usr/share/doc/%{name}
+install -d %{buildroot}%{_docdir}/%{name}
 install -pm0755 doc/* %{buildroot}/%{_docdir}/%{name}
 
 install -d %{buildroot}/etc/shinken/modules
@@ -40,9 +40,7 @@ install -pm0755 etc/modules/* %{buildroot}/etc/shinken/modules
 /usr/share/pyshared/shinken/modules/booster-nrpe
 %config(noreplace) %{_sysconfdir}/shinken/modules/
 
-%docdir
-%{_docdir}/%{name}
-
+%doc %{_docdir}/%{name}/*
 
 %changelog
 * Wed Jan 21 2015 Sébastien Coavoux <sebastien.coavoux@savoirfairelinux.com> 1.4.1-2kaji0.2
